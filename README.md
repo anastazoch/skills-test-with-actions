@@ -1,18 +1,12 @@
-<header>
+# SkillsTestWithActions
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
-# Test with Actions
+## Development server
 
-_Create workflows that enable you to use Continuous Integration (CI) for your projects._
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-</header>
-
+## Code scaffolding
 <!--
   <<< Author notes: Step 3 >>>
   Start this step by acknowledging the previous step.
