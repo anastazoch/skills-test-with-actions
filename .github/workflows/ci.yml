@@ -28,17 +28,19 @@ jobs:
       - name: Run markdown lint
         run: |
           npm install remark-cli remark-preset-lint-consistent
+          npx remark . --use remark-preset-lint-consistent --frail
   
   test:
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-node@v3
-          with:
-            node-version: 18  
-        - name: Test
-          run: |
-            npm run test-headless
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18  
+      - name: Test
+        run: |
+          npm i @angular/cli
+          npm run test-headless
 
   build: 
     runs-on: ubuntu-latest
@@ -49,6 +51,7 @@ jobs:
           node-version: 18  
       - name: Build
         run: |
+          npm i @angular/cli
           npm run build
       - uses: actions/upload-artifact@v3
         with:
