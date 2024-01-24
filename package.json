@@ -4,12 +4,50 @@
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.",
   "main": "karma.conf.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
+    "ci": "npm run test-headless && npm run build",
+    "lint": "ng lint"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/anastazoch/skills-test-with-actions/issues"
   },
   "author": "John Doe",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@angular-eslint/eslint-plugin": "^17.2.1",
+    "@angular/common": "^17.1.0",
+    "@angular/core": "^17.1.0",
+    "@angular/platform-browser": "^17.1.0",
+    "@angular/platform-browser-dynamic": "^17.1.0",
+    "@angular/router": "^17.1.0",
+    "karma-angular": "^0.0.6",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-coverage": "^2.2.1",
+    "karma-jasmine-html-reporter": "^2.1.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.1.0",
+    "@angular-eslint/builder": "17.2.1",
+    "@angular-eslint/eslint-plugin": "17.2.1",
+    "@angular-eslint/eslint-plugin-template": "17.2.1",
+    "@angular-eslint/schematics": "17.2.1",
+    "@angular-eslint/template-parser": "17.2.1",
+    "@types/jest": "^29.5.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.6",
+    "@typescript-eslint/eslint-plugin": "6.19.0",
+    "@typescript-eslint/parser": "6.19.0",
+    "eslint": "^8.56.0",
+    "install": "^0.13.0",
+    "jasmine": "^5.1.0",
+    "karma": "^6.4.2",
+    "karma-jasmine": "^5.1.0",
+    "npm": "^10.3.0"
+  }
 }
