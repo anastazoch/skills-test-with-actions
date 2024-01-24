@@ -18,8 +18,8 @@ jobs:
           node-version: 18
       - name: Run lint
         run: |
-          npm install -g @angular/cli@latest
-          ng add @angular-eslint/schematics
+          npm install @angular/cli@latest
+          ng add --skip-confirmation @angular-eslint/schematics
           npm run lint
   
   test:
