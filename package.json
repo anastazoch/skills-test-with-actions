@@ -791,5 +791,8 @@
     "url": "https://github.com/anastazoch/skills-test-with-actions/issues"
   },
   "homepage": "https://github.com/anastazoch/skills-test-with-actions#readme",
-  "devDependencies": {}
+  "devDependencies": {},
+  "optionalDependencies": {
+    "@nx/nx-linux-x64-gnu": "^16.5.1"
+  }  
 }
