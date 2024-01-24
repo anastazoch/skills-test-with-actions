@@ -18,7 +18,7 @@ jobs:
           node-version: 16.x
       - name: Run lint
         run: |
-          npm run install
+          npm install
           npm run lint
   
   test:
@@ -31,7 +31,7 @@ jobs:
           node-version: 20
       - name: Test
         run: |
-          npm run install
+          npm install
           npm run test-headless
 
   build: 
@@ -44,7 +44,7 @@ jobs:
           node-version: 20  
       - name: Build
         run: |
-          npm run install
+          npm install
           npm run build
       - uses: actions/upload-artifact@v3
         with:
