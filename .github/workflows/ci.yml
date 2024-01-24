@@ -18,8 +18,7 @@ jobs:
           node-version: 20
       - name: Run lint
         run: |
-          npm i @angular/cli
-          ng add @angular-eslint/schematics
+          npm install
           npm run lint
   
   test:
@@ -32,7 +31,7 @@ jobs:
           node-version: 20
       - name: Test
         run: |
-          npm i @angular/cli
+          npm install
           npm run test-headless
 
   build: 
@@ -45,7 +44,7 @@ jobs:
           node-version: 20  
       - name: Build
         run: |
-          npm i @angular/cli
+          npm install
           npm run build
       - uses: actions/upload-artifact@v3
         with:
