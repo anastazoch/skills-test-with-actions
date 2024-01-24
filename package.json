@@ -778,7 +778,8 @@
     "test": "ng test",
     "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
     "ci": "npm run test-headless && npm run build",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "install": "npm install --include=optional"
   },
   "repository": {
     "type": "git",
