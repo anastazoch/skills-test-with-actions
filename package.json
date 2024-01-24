@@ -789,5 +789,6 @@
   "bugs": {
     "url": "https://github.com/anastazoch/skills-test-with-actions/issues"
   },
-  "homepage": "https://github.com/anastazoch/skills-test-with-actions#readme"
+  "homepage": "https://github.com/anastazoch/skills-test-with-actions#readme",
+  "devDependencies": {}
 }
