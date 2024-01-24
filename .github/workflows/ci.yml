@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
       - name: Run lint
         run: |
           npm i @angular/cli
@@ -26,7 +29,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 18  
+          node-version: 20
       - name: Test
         run: |
           npm i @angular/cli
@@ -39,7 +42,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 18  
+          node-version: 20  
       - name: Build
         run: |
           npm i @angular/cli
