@@ -454,6 +454,7 @@
     "npm-registry-fetch": "^16.1.0",
     "npm-run-path": "^4.0.1",
     "nth-check": "^2.1.1",
+    "nx": "^17.2.8",
     "oauth-sign": "^0.9.0",
     "object-assign": "^4.1.1",
     "object-inspect": "^1.13.1",
